@@ -2,7 +2,7 @@ import React from 'react'
 
 const RightNavbar = () => {
   return (
-    <div className=''>
+    <div className='font-primary'>
         <ul className='flex items-center space-x-5'>
         <li><img src="logos/Search.png" alt="Search" /></li>
         <li>Children</li>

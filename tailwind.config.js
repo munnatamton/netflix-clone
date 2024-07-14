@@ -8,6 +8,9 @@ module.exports = {
         'white': '#E5E5E5',
         'black': '#141414',
       },
+      fontFamily:{
+        'primary':['Netflix Sans', 'sans-serif']
+      },
 
     extend: {},
   },
