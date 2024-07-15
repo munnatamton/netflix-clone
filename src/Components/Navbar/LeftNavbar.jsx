@@ -3,14 +3,14 @@ import React from 'react'
 const LeftNavbar = () => {
   return (
     <div>
-    <ul className='flex items-center space-x-5 '>
+    <ul className='flex items-center space-x-5 hover'>
         <li><img src="logos/NetflixLogoSvg.png" className="h-[30px]" alt="netflix-logo"/></li>
-        <li className='hover:opacity-80 active'><a href='#'>Home</a></li>
-        <li className='hover:opacity-80'><a href='#'>TV Shows</a></li>
-        <li className='hover:opacity-80'><a href='#'>Movies</a></li>
-        <li className='hover:opacity-80'><a href='#'>New & Popular</a></li>
-        <li className='hover:opacity-80'><a href='#'>My List</a></li>
-        <li className='hover:opacity-80'><a href='#'>Browse by Languages</a></li>
+        <li className='active'><a href='#'>Home</a></li>
+        <li><a href='#'>TV Shows</a></li>
+        <li><a href='#'>Movies</a></li>
+        <li><a href='#'>New & Popular</a></li>
+        <li><a href='#'>My List</a></li>
+        <li><a href='#'>Browse by Languages</a></li>
     </ul>
     </div>
   )
