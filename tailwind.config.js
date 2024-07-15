@@ -31,10 +31,9 @@ module.exports = {
       const newUtilities={
         '.active':{
           color:'white',
-          font:'bolder',
         },
         '.hover':{
-          opacity:'80',
+          opacity:'70%',
         }
       };
       addUtilities(newUtilities);
