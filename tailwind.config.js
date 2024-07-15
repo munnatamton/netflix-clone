@@ -1,11 +1,14 @@
+const { hover } = require('@testing-library/user-event/dist/hover');
+const { getActiveElement } = require('@testing-library/user-event/dist/utils');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{jsx,js}"],
     theme: {
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        'white': '#E5E5E5',
+        'transparent': 'transparent',
+        'current': 'currentColor',
+        'smokewhite': '#E5E5E5',
         'black': '#141414',
       },
       fontFamily:{
@@ -23,7 +26,17 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      const newUtilities={
+        '.active':{
+          color:'white',
+          font:'bolder'
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 
 }
 
