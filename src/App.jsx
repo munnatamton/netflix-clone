@@ -1,17 +1,22 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NoPage from './pages/NoPage';
+import Home from './pages/Home';
 
 
 function App() {
   return (
     
-    <BrowserRouter>
-    <Routes>
-      </Routes></BrowserRouter>
     <div className="App">
-      <Navbar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
+            <Route path="no-page" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

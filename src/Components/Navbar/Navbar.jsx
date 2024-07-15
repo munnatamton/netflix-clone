@@ -1,6 +1,7 @@
 import React from 'react'
 import LeftNavbar from './LeftNavbar'
 import RightNavbar from './RightNavbar'
+import { Outlet } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       <LeftNavbar/>
       <RightNavbar/>
     </div>
-
+    <Outlet/>
     </>
   )
 }
