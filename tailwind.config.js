@@ -10,6 +10,7 @@ module.exports = {
         'current': 'currentColor',
         'smokewhite': '#E5E5E5',
         'black': '#141414',
+        'white':'#FFFFFF'
       },
       fontFamily:{
         'primary':['Netflix Sans', 'sans-serif']
