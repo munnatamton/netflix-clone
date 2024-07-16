@@ -7,11 +7,11 @@ const LeftNavbar = () => {
       <ul className='flex items-center space-x-5'>
           <li><img src="logos/NetflixLogoSvg.png" className="h-[30px]" alt="netflix-logo"/></li>
           <li><Link to="/">Home</Link></li>
-          <li><Link to='no-page'>TV Shows</Link></li>
-          <li><Link to='no-page'>Movies</Link></li>
-          <li><Link to='no-page'>New & Popular</Link></li>
-          <li><Link to='no-page'>My List</Link></li>
-          <li><Link to='no-page'>Browse by Languages</Link></li>
+          <li><Link to='TvShows'>TV Shows</Link></li>
+          <li><Link to='Movies'>Movies</Link></li>
+          <li><Link to='Popular'>New & Popular</Link></li>
+          <li><Link to='MyList'>My List</Link></li>
+          <li><Link to='Browse'>Browse by Languages</Link></li>
       </ul>
     </div>
   )

@@ -26,19 +26,7 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [
-    function({addUtilities}){
-      const newUtilities={
-        '.active':{
-          color:'white',
-        },
-        '.hover':{
-          opacity:'70%',
-        }
-      };
-      addUtilities(newUtilities);
-    },
-  ],
+  plugins: [],
 
 }
 
