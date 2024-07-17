@@ -21,13 +21,18 @@ const Home = () => {
       </div> 
       <div className=''>
         <h2 className='text-start text-3xl'>Netflix'te Popüler</h2>
-        <div className='flex w-[100vw] overflow-x-hidden  '>
-          <CardTile image='logos/MoviePoster1.png'/>  
-          <CardTile image='logos/MoviePoster2.png'/>          
-          <CardTile image='logos/MoviePoster3.png'/>          
-          <CardTile image='logos/MoviePoster4.png'/>          
-          <CardTile image='logos/MoviePoster5.png'/>          
-
+        <div className="overflow-x-hidden">
+            <div className="w-[100vw] overflow-x-scroll">
+                <div className="flex">
+                <CardTile image="logos/MoviePoster1.png" />
+                <CardTile image="logos/MoviePoster2.png" />
+                <CardTile image="logos/MoviePoster3.png" />
+                <CardTile image="logos/MoviePoster4.png" />
+                <CardTile image="logos/MoviePoster5.png" />
+                <CardTile image="logos/MoviePoster5.png" />
+                <CardTile image="logos/MoviePoster5.png" />
+                </div>
+            </div>
         </div>
         </div>   
     </div>
