@@ -5,9 +5,10 @@ import CardTile from '../Components/CardTile';
 
 const Home = () => {
   return (
+    <>
     <div className='h-full w-full relative  overflow-x-hidden'>
       <img src='./logos/MoviePoster.png' className='h-full w-full object-cover'/>
-    <div className="absolute bottom-0 left-[60px] text-white">
+      <div className="absolute bottom-0 left-[60px] text-white">
       <img src='/logos/MovieName.png'/>
       <div className='flex text-4xl  font-medium items-center'>
         <img src='./logos/Top10Badge.png' className='h-[32px] w-[32px]'/>
@@ -19,10 +20,10 @@ const Home = () => {
         <button className='flex items-center bg-white text-black px-[30px] py-[15px] text-2xl font-medium rounded-[4px] me-[15px]'><IoPlaySharp className='me-[20px] h-[20px] w-[21.33px]'/>Oynat</button>
         <button className='flex items-center bg-white/30 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> Daha Fazla Bilgi</button>
       </div> 
-      <div className=''>
+      <div className='mb-[30px]'>
         <h2 className='text-start text-3xl'>Netflix'te Popüler</h2>
-        <div className="overflow-x-hidden">
-            <div className="w-[100vw] overflow-x-scroll">
+        <div className="">
+            <div className="w-[100vw] overflow-x-scroll scrollbar-hide">
                 <div className="flex">
                 <CardTile image="logos/MoviePoster1.png" />
                 <CardTile image="logos/MoviePoster2.png" />
@@ -31,13 +32,15 @@ const Home = () => {
                 <CardTile image="logos/MoviePoster5.png" />
                 <CardTile image="logos/MoviePoster5.png" />
                 <CardTile image="logos/MoviePoster5.png" />
-
                 </div>
             </div>
         </div>
-        </div>   
+      </div>
     </div>
     </div>
+
+
+    </>
   )
 }
 
