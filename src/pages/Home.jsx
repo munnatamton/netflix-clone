@@ -1,14 +1,16 @@
 import React from 'react'
-import { IoPlaySharp,IoInformationCircleOutline } from "react-icons/io5";
-import CardTile from '../Components/CardTile';
+import { IoPlaySharp,IoInformationCircleOutline,IoArrowForwardSharp } from "react-icons/io5";
+import CardTile1 from '../Components/CardTile/CardTile1';
+import CardTile2 from '../Components/CardTile/CardTile2';
+
 
 
 const Home = () => {
   return (
     <>
-    <div className='h-full w-full relative  overflow-x-hidden'>
+    <div className='h-full w-full relative bg-black overflow-x-hidden scrollbar-hide'>
       <img src='./logos/MoviePoster.png' className='h-full w-full object-cover'/>
-      <div className="absolute bottom-0 left-[60px] text-white">
+      <div className="absolute top-[200px] left-[60px] text-white ">
       <img src='/logos/MovieName.png'/>
       <div className='flex text-4xl  font-medium items-center'>
         <img src='./logos/Top10Badge.png' className='h-[32px] w-[32px]'/>
@@ -21,22 +23,71 @@ const Home = () => {
         <button className='flex items-center bg-white/30 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> Daha Fazla Bilgi</button>
       </div> 
       <div className='mb-[30px]'>
-        <h2 className='text-start text-3xl'>Netflix'te Popüler</h2>
-        <div className="">
-            <div className="w-[100vw] overflow-x-scroll scrollbar-hide">
-                <div className="flex">
-                <CardTile image="logos/MoviePoster1.png" />
-                <CardTile image="logos/MoviePoster2.png" />
-                <CardTile image="logos/MoviePoster3.png" />
-                <CardTile image="logos/MoviePoster4.png" />
-                <CardTile image="logos/MoviePoster5.png" />
-                <CardTile image="logos/MoviePoster5.png" />
-                <CardTile image="logos/MoviePoster5.png" />
-                </div>
+        <h2 className='text-start text-3xl font-medium'>Netflix'te Popüler</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <CardTile1 image="logos/MoviePoster1.png" />
+                <CardTile1 image="logos/MoviePoster2.png" />
+                <CardTile1 image="logos/MoviePoster3.png" />
+                <CardTile1 image="logos/MoviePoster4.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
             </div>
-        </div>
-      </div>
-    </div>
+       </div>
+       <div className='mb-[30px]'>
+        <h2 className='text-start text-3xl font-medium'>Kemal, İzlemeye Devam Et</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <CardTile1 image="logos/MoviePoster1.png" />
+                <CardTile1 image="logos/MoviePoster2.png" />
+                <CardTile1 image="logos/MoviePoster3.png" />
+                <CardTile1 image="logos/MoviePoster4.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
+              </div>
+       </div>
+       <div className='mb-[30px]'>
+        <h2 className='text-start text-3xl font-medium'>Gündemdekiler</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <CardTile1 image="logos/MoviePoster1.png" />
+                <CardTile1 image="logos/MoviePoster2.png" />
+                <CardTile1 image="logos/MoviePoster3.png" />
+                <CardTile1 image="logos/MoviePoster4.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
+            </div>
+       </div>
+       <div className='mb-[30px]'>
+        <h2 className='text-start text-3xl font-medium'>Netflix Orijinal İçerikleri</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <CardTile2 image="logos/MoviePoster6.png" />
+                <CardTile2 image="logos/MoviePoster7.png" />
+                <CardTile2 image="logos/MoviePoster8.png" />
+                <CardTile2 image="logos/MoviePoster9.png" />
+                <CardTile2 image="logos/MoviePoster6.png" />
+                <CardTile2 image="logos/MoviePoster7.png" />
+                <CardTile2 image="logos/MoviePoster8.png" />
+                <button className='absolute flex h-[618px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
+            </div>
+       </div>
+       <div className='mb-[30px]'>
+        <h2 className='text-start text-3xl font-medium'>Türkiye'de Bugünün Top 10 Listesi</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <CardTile1 image="logos/MoviePoster1.png" />
+                <CardTile1 image="logos/MoviePoster2.png" />
+                <CardTile1 image="logos/MoviePoster3.png" />
+                <CardTile1 image="logos/MoviePoster4.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <CardTile1 image="logos/MoviePoster5.png" />
+                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
+            </div>
+       </div>
+       </div>
     </div>
 
 
