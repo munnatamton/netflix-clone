@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoPlaySharp,IoInformationCircleOutline,IoArrowForwardSharp } from "react-icons/io5";
+import { IoPlaySharp,IoInformationCircleOutline } from "react-icons/io5";
 import CardTile1 from '../Components/CardTile/CardTile1';
 import CardTile2 from '../Components/CardTile/CardTile2';
 
@@ -18,9 +18,9 @@ const Home = () => {
       </div>
 
       <div className='text-3xl w-[636px] text-start'>Küçük yaşta başının çaresine bakmayı öğrenen ve çok çalışarak iş dünyasında önemli bir konuma gelen Emir, bir gün sokak şarkıcısı bir kızla karşılaşır ve hayatı değişir.</div>
-      <div className='flex my-[15px]'>
-        <button className='flex items-center bg-white text-black px-[30px] py-[15px] text-2xl font-medium rounded-[4px] me-[15px]'><IoPlaySharp className='me-[20px] h-[20px] w-[21.33px]'/>Oynat</button>
-        <button className='flex items-center bg-white/30 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> Daha Fazla Bilgi</button>
+      <div className='flex my-[15px] '>
+        <button className='flex items-center bg-white hover:opacity-90 text-black  px-[30px] py-[15px] text-2xl font-medium rounded-[4px] me-[15px]'><IoPlaySharp className='me-[20px] h-[20px] w-[21.33px]'/>Oynat</button>
+        <button className='flex items-center bg-white/30 hover:opacity-90 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> Daha Fazla Bilgi</button>
       </div> 
       <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Netflix'te Popüler</h2>
@@ -32,7 +32,6 @@ const Home = () => {
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
-                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
             </div>
        </div>
        <div className='mb-[30px]'>
@@ -45,7 +44,6 @@ const Home = () => {
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
-                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
               </div>
        </div>
        <div className='mb-[30px]'>
@@ -58,7 +56,6 @@ const Home = () => {
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
-                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
             </div>
        </div>
        <div className='mb-[30px]'>
@@ -71,7 +68,6 @@ const Home = () => {
                 <CardTile2 image="logos/MoviePoster6.png" />
                 <CardTile2 image="logos/MoviePoster7.png" />
                 <CardTile2 image="logos/MoviePoster8.png" />
-                <button className='absolute flex h-[618px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
             </div>
        </div>
        <div className='mb-[30px]'>
@@ -84,7 +80,6 @@ const Home = () => {
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
                 <CardTile1 image="logos/MoviePoster5.png" />
-                <button className='absolute flex h-[171px] items-center right-[70px] hover:bg-black/30 text-white'><IoArrowForwardSharp className='me-[20px] size-[32px]'/></button>
             </div>
        </div>
        </div>
