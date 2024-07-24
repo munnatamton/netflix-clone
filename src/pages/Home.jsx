@@ -2,7 +2,7 @@ import React from 'react'
 import { IoPlaySharp,IoInformationCircleOutline } from "react-icons/io5";
 import CardTile1 from '../Components/CardTile/CardTile1';
 import CardTile2 from '../Components/CardTile/CardTile2';
-
+import RankTile from '../Components/CardTile/RankTile';
 
 
 const Home = () => {
@@ -68,6 +68,16 @@ const Home = () => {
                 <CardTile2 image="logos/MoviePoster6.png" />
                 <CardTile2 image="logos/MoviePoster7.png" />
                 <CardTile2 image="logos/MoviePoster8.png" />
+            </div>
+       </div>
+       <div className='mb-[30px]'>
+        <h2 className='text-start text-3xl font-medium'>Türkiye'de Bugünün Top 10 Listesi</h2>
+            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
+                <RankTile image="logos/MoviePoster1.png" rank="logos/Rank1.png" />
+                <RankTile image="logos/MoviePoster2.png" rank="logos/Rank2.png" />
+                <RankTile image="logos/MoviePoster3.png" rank="logos/Rank3.png" />
+                <RankTile image="logos/MoviePoster4.png" rank="logos/Rank4.png" />
+                <RankTile image="logos/MoviePoster5.png" rank="logos/Rank5.png" />
             </div>
        </div>
        <div className='mb-[30px]'>
