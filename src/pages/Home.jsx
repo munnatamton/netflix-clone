@@ -70,6 +70,7 @@ const Home = () => {
                 <CardTile2 image="logos/MoviePoster8.png" />
             </div>
        </div>
+       
        <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Türkiye'de Bugünün Top 10 Listesi</h2>
             <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
@@ -78,18 +79,6 @@ const Home = () => {
                 <RankTile image="logos/MoviePoster3.png" rank="logos/Rank3.png" />
                 <RankTile image="logos/MoviePoster4.png" rank="logos/Rank4.png" />
                 <RankTile image="logos/MoviePoster5.png" rank="logos/Rank5.png" />
-            </div>
-       </div>
-       <div className='mb-[30px]'>
-        <h2 className='text-start text-3xl font-medium'>Türkiye'de Bugünün Top 10 Listesi</h2>
-            <div className="flex w-[100vw] overflow-x-scroll scrollbar-hide">
-                <CardTile1 image="logos/MoviePoster1.png" />
-                <CardTile1 image="logos/MoviePoster2.png" />
-                <CardTile1 image="logos/MoviePoster3.png" />
-                <CardTile1 image="logos/MoviePoster4.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
             </div>
        </div>
        </div>
