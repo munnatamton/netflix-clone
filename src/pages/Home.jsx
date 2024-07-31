@@ -4,17 +4,18 @@ import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 import CardTile1 from '../Components/CardTile/CardTile1';
 import CardTile2 from '../Components/CardTile/CardTile2';
 import RankTile from '../Components/CardTile/RankTile';
+import Slider from '../Components/Slider';
 
 
 const Home = () => {
 
   const sliderRight=()=>{
-    var slider=document.getElementById('slider');
-    slider.scrollLeft=slider.scrollLeft-200;
+    var slider=document.querySelector('.slider');
+    slider.scrollLeft=slider.scrollLeft-500;
   }
   const sliderLeft=()=>{
-    var slider=document.getElementById('slider');
-    slider.scrollLeft=slider.scrollLeft+200;
+    var slider=document.querySelector('.slider');
+    slider.scrollLeft=slider.scrollLeft+500;
   }
 
 
@@ -36,21 +37,11 @@ const Home = () => {
       </div> 
       <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Netflix'te Popüler</h2>
-            <div id='slider' className="scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
-            <button onClick={sliderRight}  className='absolute left-0 hover:bg-black/20 text-white w-[60px] h-[160px] mt-[10px] mb-[11px] me-[5px]'><IoIosArrowBack className='hover:scale-125 size-[60px]'/></button>
-                <CardTile1 image="logos/MoviePoster1.png" />
-                <CardTile1 image="logos/MoviePoster2.png" />
-                <CardTile1 image="logos/MoviePoster3.png" />
-                <CardTile1 image="logos/MoviePoster4.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
-                <CardTile1 image="logos/MoviePoster5.png" />
-            <button onClick={sliderLeft} className='absolute right-[70px] hover:bg-black/20 text-white w-[60px] h-[160px] mt-[10px] mb-[11px] me-[5px]'><IoIosArrowForward className='hover:scale-125 size-[60px]'/></button>
-            </div>
+           <Slider/>
        </div>
        <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Gündemdekiler</h2>
-            <div id='slider' className="scorll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
+            <div className="slider scorll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
             <button onClick={sliderRight} className='absolute left-0 hover:bg-black/20 text-white w-[60px] h-[160px] mt-[10px] mb-[11px] me-[5px]'><IoIosArrowBack className='hover:scale-125 size-[60px]'/></button>
                 <CardTile1 image="logos/MoviePoster1.png" />
                 <CardTile1 image="logos/MoviePoster2.png" />
@@ -64,7 +55,7 @@ const Home = () => {
        </div>
        <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Netflix Orijinal İçerikleri</h2>
-            <div id='slider' className="scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
+            <div className="slider scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
             <button onClick={sliderRight} className='absolute left-0 hover:bg-black/20 text-white w-[60px] h-[575px]  mt-[10px] mb-[11px] me-[5px]'><IoIosArrowBack className='hover:scale-125 size-[60px]'/></button>
                 <CardTile2 image="logos/MoviePoster6.png" />
                 <CardTile2 image="logos/MoviePoster7.png" />
@@ -78,7 +69,7 @@ const Home = () => {
        </div>
        <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Türkiye'de Bugünün Top 10 Listesi</h2>
-            <div id='slider' className="scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
+            <div className="slider scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
             <button onClick={sliderRight} className='absolute left-0 hover:bg-black/20 text-white w-[60px] h-[145px] mt-[10px] mb-[11px] me-[5px] '><IoIosArrowBack className='hover:scale-125 size-[60px]'/></button>
                 <RankTile image="logos/MoviePoster1.png" rank="logos/Rank1.png" />
                 <RankTile image="logos/MoviePoster2.png" rank="logos/Rank2.png" />
@@ -90,7 +81,7 @@ const Home = () => {
        </div>
        <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Kemal, İzlemeye Devam Et</h2>
-            <div id='slider' className="scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
+            <div className="slider scroll-smooth flex w-[100vw] overflow-x-scroll scrollbar-hide">
             <button onClick={sliderRight} className='absolute left-0 hover:bg-black/20 text-white w-[60px] h-[160px] mt-[10px] mb-[11px] me-[5px]'><IoIosArrowBack className='hover:scale-125 size-[60px]'/></button>
                 <CardTile1 image="logos/MoviePoster1.png" />
                 <CardTile1 image="logos/MoviePoster2.png" />
@@ -104,7 +95,6 @@ const Home = () => {
        </div>
        </div>
     </div>
-
 
     </>
   )

@@ -13,8 +13,6 @@ import Children from './pages/Children';
 
 function App() {
 
-  
-
   return (
     <>
     <div className="App">
