@@ -7,11 +7,11 @@ const Slider = ({list}) => {
     const refEle = useRef(null)
 
     const sliderRight=()=>{
-        refEle.current.scrollLeft = -200
+        refEle.current.scrollLeft = -500
       }
 
       const sliderLeft=()=>{
-        refEle.current.scrollLeft = 200
+        refEle.current.scrollLeft = 500
       }
       
   return (

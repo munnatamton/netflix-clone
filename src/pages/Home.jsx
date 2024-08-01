@@ -11,20 +11,20 @@ const Home = () => {
   const originalRef = useRef(null)
 
   const origRight=()=>{
-    originalRef.current.scrollLeft = -200
+    originalRef.current.scrollLeft = -500
   }
 
   const origLeft=()=>{
-    originalRef.current.scrollLeft = 200
+    originalRef.current.scrollLeft = 500
   }
   
   const sliderRight=()=>{
     var slider=document.querySelector('.slider');
-    slider.scrollLeft=slider.scrollLeft-200;
+    slider.scrollLeft=slider.scrollLeft-500;
   }
   const sliderLeft=()=>{
     var slider=document.querySelector('.slider');
-    slider.scrollLeft=slider.scrollLeft+200;
+    slider.scrollLeft=slider.scrollLeft+500;
   }
   
 const slider1 = [
@@ -34,6 +34,10 @@ const slider1 = [
   "MoviePoster4.png",
   "MoviePoster5.png",
   "MoviePoster1.png",
+  "MoviePoster2.png",
+  "MoviePoster3.png",
+  "MoviePoster4.png",
+  "MoviePoster5.png",
 ]
 const slider2 = [
   "MoviePoster6.png",
@@ -41,8 +45,9 @@ const slider2 = [
   "MoviePoster8.png",
   "MoviePoster9.png",
   "MoviePoster6.png",
+  "MoviePoster7.png",
   "MoviePoster8.png",
-
+  "MoviePoster9.png",
 ]
 
   return (
@@ -58,8 +63,9 @@ const slider2 = [
 
       <div className='text-3xl w-[636px] text-start'>Küçük yaşta başının çaresine bakmayı öğrenen ve çok çalışarak iş dünyasında önemli bir konuma gelen Emir, bir gün sokak şarkıcısı bir kızla karşılaşır ve hayatı değişir.</div>
       <div className='flex my-[15px] '>
-        <button className='flex items-center bg-white hover:opacity-90 text-black  px-[30px] py-[15px] text-2xl font-medium rounded-[4px] me-[15px]'><IoPlaySharp className='me-[20px] h-[20px] w-[21.33px]'/>Oynat</button>
-        <button className='flex items-center bg-white/30 hover:opacity-90 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> Daha Fazla Bilgi</button>
+        <button className='flex items-center bg-white hover:opacity-90 text-black  px-[30px] py-[15px] text-2xl font-medium rounded-[4px] me-[15px]'><IoPlaySharp className='me-[20px] h-[20px] w-[21.33px]'/>Play</button>
+        <button className='flex items-center bg-white/30 hover:opacity-90 text-white  px-[30px] py-[15px] text-2xl font-medium rounded-[4px]'><IoInformationCircleOutline className='me-[20px] size-[32px]'/> More Info 
+        </button>
       </div> 
       <div className='mb-[30px]'>
         <h2 className='text-start text-3xl font-medium'>Netflix'te Popular</h2>
